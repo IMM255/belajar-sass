@@ -1,0 +1,24 @@
+// //CSS variables
+// :root{
+//     --primary-color: #f4f1de;
+//     --secondary-color: #fefefe;
+//     --text-color: #e07a5f;
+// }
+
+// body{
+//     background-color: var(--primary-color);
+// }
+
+// $alert-warning: orange;
+// $alert-success: green;
+// $alert-red: red;
+$alert: (
+    'danger': red,
+    'success': green,
+    'warning': orange,
+);
+
+h1{
+    color: map-get($alert,'warning');
+
+}
